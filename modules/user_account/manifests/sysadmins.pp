@@ -1,4 +1,4 @@
 class user_account::sysadmins {
   include user_account::virtual
-  realize(UserAccount['cirode']) 
+  realize(User_account['cirode']) 
 }
