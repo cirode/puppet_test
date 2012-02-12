@@ -18,11 +18,11 @@ define user_account (
     gid        => $gid,
     groups     => $groups,
     shell      => $shell,
-    home       => '/home/${username}',
+    home       => "/home/${username}",
     managehome => true
   }
   
-  ssh_authorized_key{'${username}_public_key':
+  ssh_authorized_key{"${username}_public_key":
     ensure => present,
     key => $key,
     user => $username,
