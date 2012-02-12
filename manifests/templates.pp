@@ -1,4 +1,7 @@
+#node types. EG: Web server, Cassandra server, index server, etc
+
 node basenode {
+  include user_account::sysadmins
 
   group{'puppet':
     ensure => present,
